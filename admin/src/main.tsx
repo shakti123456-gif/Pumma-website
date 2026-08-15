@@ -5,8 +5,8 @@ import './styles.css'
 type Product = { id: number; name: string; description: string; category: string; price: number; stock: number; image: string; active: boolean }
 type Dashboard = { products: number; orders: number; revenue: number; lowStock: number }
 const api = import.meta.env.VITE_API_URL ?? 'http://localhost:8080'
-const categories = ['Shoes', 'Clothing']
-const blank: Product = { id: 0, name: '', description: '', category: 'Shoes', price: 0, stock: 0, image: '', active: true }
+const categories = ['Running', 'Training', 'Football', 'Basketball', 'Lifestyle']
+const blank: Product = { id: 0, name: '', description: '', category: 'Running', price: 0, stock: 0, image: '', active: true }
 
 function App() {
   const [products, setProducts] = useState<Product[]>([])
