@@ -23,3 +23,12 @@ pnpm-debug.log*
 .vscode/
 .idea/
 .DS_Store
+
+# Backend runtime data
+backend/data/
+
+# Local Go module cache created when this directory is configured as GOPATH
+pkg/
+
+# Local Go build output
+backend/ecommerce-backend
