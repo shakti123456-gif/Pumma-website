@@ -2,6 +2,7 @@ services:
   - type: web
     name: aero-studio
     runtime: static
+    rootDir: frontend
     buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
     routes:
